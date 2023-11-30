@@ -10,8 +10,10 @@ int main()
     vector<int> price;
     int length, temp;
     cin >> length;
-    while(cin >> temp)
+    for(int i = 0 ; i < length ; i++){
+        cin >> temp;
         price.push_back(temp);
+    }
     for(int i = 1 ; i <= length ; i++){
         int Max = INT16_MIN , Cut = 0;
         for(int j = 0 ; j < i ; j++){
